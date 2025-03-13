@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Adicionada</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Liberty Motorcycles</h1>
+    </header>
+    <div class="main-content">
+        <h2>Moto {{ modelo }} adicionada com sucesso!</h2>
+        <!-- Botões de ação após o cadastro da moto -->
+        <div class="buttons">
+            <a href="/adicionar"><button>Cadastrar Outra Moto</button></a>
+            <a href="/consultar"><button>Voltar ao Estoque</button></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o layout da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-image: url("{{ url_for('static', filename='imagens/logo-liberty.png') }}");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Título */
+header h1 {
+    font-size: 36px;
+}
+
+/* Estilos para o conteúdo principal */
+.main-content {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Subtítulo */
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Lista de links */
+ul {
+    list-style-type: none;
+}
+
+/* Estilo para links e botões */
+ul li a,
+button,
+.btn-voltar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* Container para alinhar botões lado a lado */
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Hover nos links e botões */
+ul li a:hover,
+button:hover,
+.btn-voltar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilizando a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .main-content h2 {
+        font-size: 20px;
+    }
+
+    ul li a {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .botoes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilo para garantir que os links fiquem lado a lado */
+.button-list {
+    list-style-type: none; /* Remove os pontos das listas */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Exibe os itens da lista em linha */
+    justify-content: center; /* Alinha os itens no centro */
+}
+
+.button-list li {
+    margin: 0 15px; /* Adiciona espaço entre os botões */
+}
+
+.button-list li a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 10px 20px;
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+.button-list li a:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Motorcycles - Sistema de Estoque</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="{{ url_for('static', filename='imagens/logo-liberty.png') }}" alt="Logo da Liberty Motorcycles">
+        </h1>
+    </header>
+    <div class="main-content">
+        <h2>Bem-vindo ao Sistema de Estoque de Motos</h2>
+        <p>Selecione uma opção abaixo:</p>
+        <ul class="button-list">
+            <!-- Atualização dos links para corresponder às rotas no app.py -->
+            <li><a href="/adicionar_moto" class="button">Adicionar Moto</a></li>
+            <li><a href="/estoque" class="button">Consultar Estoque</a></li>
+        </ul>
+    </div>
+</body>
+</html>

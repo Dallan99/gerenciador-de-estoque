@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque de Motos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Estoque de Motos</h1>
+    </header>
+
+    <div class="main-content">
+        <h2>Motos Cadastradas</h2>
+
+        {% if motos %}
+        <table border="1">
+            <tr>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Cor</th>
+                <th>Marca</th>
+                <th>Placa</th>
+                <th>Valor de Compra</th>
+                <th>Valor de Venda</th>
+            </tr>
+            {% for moto in motos %}
+            <tr>
+                <td>{{ moto.modelo }}</td>
+                <td>{{ moto.ano }}</td>
+                <td>{{ moto.cor }}</td>
+                <td>{{ moto.marca }}</td>
+                <td>{{ moto.placa }}</td>
+                <td>R$ {{ moto.valor_compra }}</td>
+                <td>R$ {{ moto.valor_venda }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>Nenhuma moto cadastrada ainda.</p>
+        {% endif %}
+
+        <br><br>
+        <form action="/">
+            <button type="submit">Voltar à Página Inicial</button>
+        </form>
+    </div>
+</body>
+</html>
