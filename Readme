@@ -1,0 +1,65 @@
+# Liberty Motorcycles - Sistema de Estoque
+
+## Descrição
+Este é um sistema de gerenciamento de estoque de motocicletas, desenvolvido utilizando **Flask**. O sistema permite adicionar motocicletas ao estoque e visualizar os modelos cadastrados.
+
+## Funcionalidades
+- Adicionar motocicletas ao estoque
+- Consultar lista de motocicletas cadastradas
+- Interface web simples com HTML, CSS e Flask
+
+## Tecnologias Utilizadas
+- **Python** (Flask)
+- **HTML & CSS** (Interface Web)
+- **Jinja2** (Templates dinâmicos do Flask)
+
+## Estrutura do Projeto
+```
+/novo_gerenciador_estoque/
+│-- app.py  # Arquivo principal do Flask
+│-- templates/  # Páginas HTML
+│   │-- index.html
+│   │-- adicionar_moto.html
+│   │-- estoque.html
+│-- static/  # Arquivos estáticos (CSS e imagens)
+│   │-- style.css
+│   └── imagens/
+│       └── logo-liberty.png
+```
+
+## Instalação e Execução
+### 1️⃣ Clone este repositório
+```bash
+git clone https://github.com/seu-usuario/novo_gerenciador_estoque.git
+cd novo_gerenciador_estoque
+```
+
+### 2️⃣ Crie um ambiente virtual (opcional, mas recomendado)
+```bash
+python -m venv venv
+source venv/bin/activate  # Para Linux/Mac
+venv\Scripts\activate  # Para Windows
+```
+
+### 3️⃣ Instale as dependências
+```bash
+pip install flask
+```
+
+### 4️⃣ Execute o projeto
+```bash
+flask run
+```
+Acesse no navegador: **[http://127.0.0.1:5000/](http://127.0.0.1:5000/)**
+
+## Endpoints do Sistema
+- `/` - Tela inicial
+- `/adicionar_moto` - Formulário para adicionar motocicletas
+- `/estoque` - Lista das motocicletas cadastradas
+
+## Licença
+Este projeto está sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+Desenvolvido por [Seu Nome](https://github.com/seu-usuario). 🚀
+
