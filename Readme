@@ -1,4 +1,4 @@
-# Liberty Motorcycles - Sistema de Estoque
+# Sistema de Estoque - Gerenciador de Estoque de Loja de Automóveis
 
 ## Descrição
 Este é um sistema de gerenciamento de estoque de motocicletas, desenvolvido utilizando **Flask**. O sistema permite adicionar motocicletas ao estoque e visualizar os modelos cadastrados.
